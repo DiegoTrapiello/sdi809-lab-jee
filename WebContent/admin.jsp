@@ -21,8 +21,10 @@
 	<c:if test="${sessionScope.usuario != 'admin'}">
 		<c:redirect url="/login.jsp" />
 	</c:if>
+	
 	<jsp:useBean id="producto" class="com.uniovi.sdi.Producto" />
 	<jsp:setProperty name="producto" property="*" />
+	
 	<c:if test="${producto.nombre != null}">
 		<jsp:useBean id="productosService"
 			class="com.uniovi.sdi.ProductosService" />
