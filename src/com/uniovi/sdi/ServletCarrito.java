@@ -24,7 +24,6 @@ public class ServletCarrito extends HttpServlet {
 	 */
 	public ServletCarrito() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	/**
